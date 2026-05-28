@@ -11,6 +11,17 @@ I am a Cybersecurity Graduate & Technical Infrastructure Engineer specializing i
 
 ---
 
+## 📜 Education & Certifications
+
+### 🎓 Academic Foundations
+- **M.S. in Cybersecurity and Information Assurance** — Western Governors University
+
+### 🔒 Professional Certifications (CompTIA Stack)
+- **Advanced Operations / Purple Team:** CySA+ (Cybersecurity Analyst) | PenTest+ (Penetration Tester)
+- **Core Security & Infrastructure:** Security+ | Network+ | A+
+- **Project Management:** Project+
+---
+
 ## 🛠️ Technical Toolkit
 
 ### Security Operations & Systems
