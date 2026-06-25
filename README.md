@@ -1,53 +1,44 @@
-# Hi, I'm Corbin! 👋 
+# Hi, I'm Corbin 👋
 
-I am a Cybersecurity Graduate & Technical Infrastructure Engineer specializing in security operations, kernel-level telemetry pipelines, and cloud perimeter defense. I thrive on building labs, breaking configurations, and engineering robust monitoring frameworks.
+I'm a Cybersecurity M.S. graduate building toward a career in AI-driven
+security automation. My background leans blue-team / detection, and right
+now I'm spending most of my time learning to build with LLMs and agents —
+and applying that to security operations.
 
----
+I learn by building labs, breaking them on purpose, and writing up what
+actually went wrong.
 
-## 🚀 Active Technical Focus
-- **Current Sprint:** Engineering cross-platform host telemetry via Wazuh and Microsoft Sysmon.
-- **Homelab Environment:** Deploying automated endpoint defense (SOAR/Active Response) inside isolated cloud virtual networks.
-- **Interests:** Scripting native API handlers (Python 3), threat emulation, and log analysis.
+## 🎯 What I'm working on now
+- Building with LLM orchestration and agent workflows (n8n, Python)
+- Turning my homelab SIEM work into automation I can extend and defend
+- Deepening Python from scripting toward small, real applications
 
----
+## 🎓 Education & Certifications
+- **M.S.**, Cybersecurity & Information Assurance — Western Governors University
+- **B.S.**, Cybersecurity & Information Assurance — Western Governors University
+- **CompTIA:** A+ · Network+ · Security+ · CySA+ · PenTest+ · Project+
+- **ITIL 4 Foundation**
 
-## 📜 Education & Certifications
+## 🧰 Tools I work with
+- **Security Ops:** Wazuh, Microsoft Sysmon, Windows Event Logs, MITRE ATT&CK
+- **Cloud / Infra:** AWS EC2, Oracle Cloud (OCI), Ubuntu, Ansible
+- **Dev / Automation:** Python, Bash, PowerShell, Git, n8n
+- **Currently learning:** LLM/agent orchestration, detection engineering, cloud security
 
-### 🎓 Academic Foundations
-- **M.S. in Cybersecurity and Information Assurance** — Western Governors University
+## 📂 Projects
+### Cloud SIEM + Automated Active Response — Wazuh · AWS · Ansible
+Deployed Wazuh on AWS EC2, enrolled a Windows 11 endpoint with Sysmon for
+deeper telemetry, and used Ansible to automate the manager setup. Added
+active-response rules that auto-block hosts on high-severity alerts. This was
+a rebuild of an earlier Oracle Cloud version — the second pass added
+infrastructure-as-code and automated containment.
 
-### 🔒 Professional Certifications (CompTIA Stack)
-- **Advanced Operations / Purple Team:** CySA+ (Cybersecurity Analyst) | PenTest+ (Penetration Tester)
-- **Core Security & Infrastructure:** Security+ | Network+ | A+
-- **Project Management:** Project+
----
+### Cloud SIEM + Custom Discord Alerting — Wazuh · Oracle Cloud · Python
+The first version. Wrote a Python integration to push Wazuh alerts to Discord
+as severity-color-coded embeds, and documented the real bugs I hit along the
+way (null-field payload rejections; a BOM/CRLF issue that made Linux misread
+the Python script as Bash).
 
-## 🛠️ Technical Toolkit
-
-### Security Operations & Systems
-- **SIEM / Logging:** Wazuh, Microsoft Sysmon, Windows Event Log Subsystem
-- **Operating Systems:** Ubuntu Linux, Windows Server, Enterprise Host Environments
-- **Cloud Infrastructure:** Oracle Cloud Infrastructure (OCI), Virtual Cloud Networks (VCN)
-
-### Development & Automation
-- **Languages:** Python 3, Bash, PowerShell scripting
-- **Tools:** Git/Version Control, Markdown documentation
-
----
-
-## 📁 Featured Security Case Studies
-
-### 🔹 [Cloud-Native SIEM Telemetry & Custom API Pipeline]
-Designed and deployed a cloud-hosted Wazuh manager that ingests Microsoft Sysmon logs from a local host. Wrote a custom, native Python integration to parse raw JSON data and deliver real-time, color-coded threat alerts to Discord within 3 seconds of execution. Maps anomalies directly to the MITRE ATT&CK framework.
-* **Skills Verified:** Python 3, API Integration, Linux Administration, Sysmon Host Auditing.
-
----
-
-## 📊 Connect with Me
-- **LinkedIn:** 
-- **Portfolio Site / Contact:** corbinmgriffin@gmail.com
-
-<!---
-Kaboombafoo/Kaboombafoo is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
-You can click the Preview link to take a look at your changes.
---->
+## 📫 Contact
+- 📧 corbinmgriffin@gmail.com
+- 💼 LinkedIn: https://linkedin.com/in/corbin-m-griffin
