@@ -1,44 +1,36 @@
 # Hi, I'm Corbin 👋
 
-I'm a Cybersecurity M.S. graduate building toward a career in AI-driven
-security automation. My background leans blue-team / detection, and right
-now I'm spending most of my time learning to build with LLMs and agents —
-and applying that to security operations.
+Cybersecurity M.S. graduate building at the intersection of **AI and security** —
+specifically, using LLMs and agents to automate security operations work.
 
-I learn by building labs, breaking them on purpose, and writing up what
-actually went wrong.
+I learn by building things from scratch, breaking them, and writing up what
+actually happened.
 
-## 🎯 What I'm working on now
-- **[SOC Triage Agent](https://github.com/Kaboombafoo/soc-triage-agent)** — an AI agent (hand-built, no framework) that triages security indicators using tools and live threat-intel APIs. My first real applied-AI security project.
-- Learning AI agent architecture from the ground up: tool use, the agent loop, and the line between verified tool data and model knowledge.
-- Extending the agent with real reputation/verdict checks (VirusTotal) next.
+## 🔭 Featured project
+**[SOC-Triage-Agent](https://github.com/Kaboombafoo/SOC-Triage-Agent)** — an AI
+agent that triages security indicators (IPs, domains, file hashes). It extracts
+indicators from raw text, checks them against live threat-intel APIs (VirusTotal,
+IPinfo), and returns a verdict — with the verdict logic deliberately kept in code
+(deterministic, auditable) rather than left to the model. Hand-built, no agent
+framework; I can explain every line.
+
+## 🎯 What I'm working on
+- Building and understanding AI agents from the ground up: tool use, the agent
+  loop, and the line between verified tool data and model knowledge.
+- Applying it to security: detection, triage, and automation.
+- Deepening Python and live-API integration through real projects.
 
 ## 🎓 Education & Certifications
-- **M.S.**, Cybersecurity & Information Assurance — Western Governors University
-- **B.S.**, Cybersecurity & Information Assurance — Western Governors University
+- **M.S.** & **B.S.**, Cybersecurity & Information Assurance — Western Governors University
 - **CompTIA:** A+ · Network+ · Security+ · CySA+ · PenTest+ · Project+
 - **ITIL 4 Foundation**
 
 ## 🧰 Tools I work with
-- **Security Ops:** Wazuh, Microsoft Sysmon, Windows Event Logs, MITRE ATT&CK
-- **Cloud / Infra:** AWS EC2, Oracle Cloud (OCI), Ubuntu, Ansible
-- **Dev / Automation:** Python, Bash, PowerShell, Git, n8n
-- **Currently learning:** LLM/agent orchestration, detection engineering, cloud security
-
-## 📂 Projects
-### Cloud SIEM + Automated Active Response — Wazuh · AWS · Ansible
-Deployed Wazuh on AWS EC2, enrolled a Windows 11 endpoint with Sysmon for
-deeper telemetry, and used Ansible to automate the manager setup. Added
-active-response rules that auto-block hosts on high-severity alerts. This was
-a rebuild of an earlier Oracle Cloud version — the second pass added
-infrastructure-as-code and automated containment.
-
-### Cloud SIEM + Custom Discord Alerting — Wazuh · Oracle Cloud · Python
-The first version. Wrote a Python integration to push Wazuh alerts to Discord
-as severity-color-coded embeds, and documented the real bugs I hit along the
-way (null-field payload rejections; a BOM/CRLF issue that made Linux misread
-the Python script as Bash).
+- **AI / Automation:** Python, Anthropic API, LLM tool-use / agents, n8n
+- **Security Ops:** Wazuh, Sysmon, MITRE ATT&CK, VirusTotal, IPinfo
+- **Cloud / Infra:** AWS, Oracle Cloud, Ubuntu/WSL, Git
+- **Currently learning:** RAG, local model deployment, detection engineering
 
 ## 📫 Contact
 - 📧 corbinmgriffin@gmail.com
-- 💼 LinkedIn: https://linkedin.com/in/corbin-m-griffin
+- 💼 [LinkedIn](https://linkedin.com/in/corbin-m-griffin)
