@@ -9,9 +9,9 @@ I learn by building labs, breaking them on purpose, and writing up what
 actually went wrong.
 
 ## 🎯 What I'm working on now
-- Building with LLM orchestration and agent workflows (n8n, Python)
-- Turning my homelab SIEM work into automation I can extend and defend
-- Deepening Python from scripting toward small, real applications
+- **[SOC Triage Agent](https://github.com/Kaboombafoo/soc-triage-agent)** — an AI agent (hand-built, no framework) that triages security indicators using tools and live threat-intel APIs. My first real applied-AI security project.
+- Learning AI agent architecture from the ground up: tool use, the agent loop, and the line between verified tool data and model knowledge.
+- Extending the agent with real reputation/verdict checks (VirusTotal) next.
 
 ## 🎓 Education & Certifications
 - **M.S.**, Cybersecurity & Information Assurance — Western Governors University
