@@ -1,46 +1,47 @@
 # Hi, I'm Corbin 👋
 
-Cybersecurity M.S. graduate building at the intersection of **AI and security** —
-specifically, using LLMs and agents to automate security operations work.
+Cybersecurity M.S. (WGU) with the full CompTIA security stack, building **AI agents and detection content on a blue-team foundation**. I write Python at the scripting level — agents, RAG pipelines, detection rules, test harnesses — and my rule is that every lab session leaves a committed, defensible artifact behind.
 
-I learn by building things from scratch, breaking them, and writing up what
-actually happened.
+**Now:** targeting SOC / IAM analyst roles. **Long-term:** AI red teaming.
 
-## 🔭 Featured projects
+---
 
-**[SOC-Triage-Agent](https://github.com/Kaboombafoo/SOC-Triage-Agent)** — an AI
-agent that triages security indicators (IPs, domains, file hashes). It extracts
-indicators from raw text, checks them against live threat-intel APIs (VirusTotal,
-IPinfo), and returns a verdict — with verdict logic kept in code (deterministic,
-auditable) rather than left to the model.
+## Projects
 
-**[attack-knowledge-rag](https://github.com/Kaboombafoo/attack-knowledge-rag)** —
-a retrieval-augmented generation (RAG) system over the MITRE ATT&CK knowledge
-base. Embeds 697 techniques into a semantic search space, retrieves the most
-relevant ones for a plain-English question, and generates a grounded, cited
-answer — refusing honestly when retrieval is weak. Assembled from primitives
-(local embedding model, hand-computed similarity, direct LLM call) rather than a
-RAG framework.
+### 🔍 [SOC Triage Agent](https://github.com/Kaboombafoo/SOC-Triage-Agent)
+An LLM-based agent, written from scratch with no framework, that triages security indicators (IPs, domains, file hashes): extracts them from raw text, enriches against live threat-intel APIs (VirusTotal, IPinfo), and returns a verdict. Verdict logic is deterministic code, not model output, so every result is auditable — the model reasons, the code decides.
 
-Both are hand-assembled and documented so I can explain and defend every stage.
+### 📚 [ATT&CK Knowledge RAG](https://github.com/Kaboombafoo/attack-knowledge-rag)
+Retrieval-augmented generation over the full MITRE ATT&CK dataset (697 techniques, current to v19). Vector similarity implemented by hand first, then upgraded to Chroma; includes a confidence guardrail that refuses to answer when retrieval is weak instead of fabricating.
 
-## 🎯 What I'm working on
-- Building and understanding AI systems from the ground up — agents, tool use,
-  and retrieval-augmented generation (RAG) — applied to security.
-- Deepening the retrieval side: vector databases, reranking, and better chunking.
-- Strengthening the line between verified data and model knowledge in everything I build.
+### 🛡️ [Medusa Ransomware Detections](https://github.com/Kaboombafoo/medusa-detections)
+Six Sigma rules covering Medusa ransomware TTPs (CISA AA25-071A). Three are lab-validated — Atomic Red Team execution on a Sysmon-instrumented VM, detections confirmed in Splunk — and three are AI-assisted coverage rules, labeled as such in the README. The validated/generated distinction is kept explicit on purpose.
 
-## 🎓 Education & Certifications
-- **M.S.** & **B.S.**, Cybersecurity & Information Assurance — Western Governors University
+### 📡 [Wazuh SIEM Homelab](https://github.com/Kaboombafoo/wazuh-siem-homelab)
+Wazuh deployed twice (Oracle Cloud, then AWS via Ansible), physical Windows 11 endpoint enrolled with Sysmon, custom Python → Discord alert integration, automated active response, and a documented false-positive investigation. Includes corrected ATT&CK mappings where the tool's own rule tags were stale or wrong.
+
+---
+
+## Education & Certifications
+
+- **M.S., Cybersecurity & Information Assurance** — Western Governors University, 2026
+- **B.S., Cybersecurity & Information Assurance** — Western Governors University, 2023
 - **CompTIA:** A+ · Network+ · Security+ · CySA+ · PenTest+ · Project+
 - **ITIL 4 Foundation**
 
-## 🧰 Tools I work with
-- **AI / Automation:** Python, Anthropic API, LLM agents & tool use, RAG, embeddings & semantic search, sentence-transformers, NumPy, n8n
-- **Security Ops:** Wazuh, Sysmon, MITRE ATT&CK, VirusTotal, IPinfo
-- **Cloud / Infra:** AWS, Oracle Cloud, Ubuntu/WSL, Git
-- **Currently learning:** RAG, local model deployment, detection engineering
+## Toolkit
 
-## 📫 Contact
-- 📧 corbinmgriffin@gmail.com
-- 💼 [LinkedIn](https://linkedin.com/in/corbin-m-griffin)
+- **Security operations:** Splunk (SPL), Wazuh, Sigma, Sysmon, Atomic Red Team, MITRE ATT&CK
+- **AI & automation:** LLM agents & tool use, RAG, embeddings, Chroma, Anthropic API, n8n
+- **Scripting:** Python, SQL, Bash, PowerShell
+- **Infrastructure:** AWS EC2, Oracle Cloud, Ansible, Linux, Windows, Git
+
+## Currently
+
+- 📈 TryHackMe SOC foundations path
+- 🎯 Next up: Hack The Box AI Red Teamer path (garak, PyRIT, promptfoo on the tooling slate)
+
+## Connect
+
+- **LinkedIn:** [linkedin.com/in/corbin-m-griffin](https://linkedin.com/in/corbin-m-griffin)
+- **Email:** corbinmgriffin@gmail.com
